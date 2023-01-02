@@ -1,0 +1,12 @@
+#streamlit==0.62.1
+click==7.1.2
+streamlit==0.84.1
+simplemma==0.4.0
+pandarallel==1.6.3
+pyLDAvis==3.3.1
+gensim==4.3.0
+wordcloud==1.8.2.2
+pandas==1.4.1
+matplotlib==3.4.0
+protobuf==3.20.01
+#click==8.0.4
