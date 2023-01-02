@@ -6,6 +6,8 @@
 # 0. Business Understanding
 
 Aim of this analysis to create a generic application using a machine learning algorithm to provide information to potential car buyers from public data.
+You can find the blog post about this analysis on: 
+https://istavrit.de/2022/12/31/You-should-check-it-before-buying-a-new-Toyota-Corolla-Hybrid.html
 
 # 1. Data Understanding
 
@@ -14,13 +16,13 @@ There are 236 comments on eksisozluk and 60 complaints on sikayetvar.com.
 
 ### Eksisozluk Comments
 
-![](ghtop_images/toyota_analysis_1.png)
-![](ghtop_images/toyota_analysis_5.png)
+![](media/toyota_analysis_1.png)
+![](media/toyota_analysis_5.png)
 
 ### Sikayetvar Complaints
 
-![](ghtop_images/toyota_analysis_1.png)
-![](ghtop_images/toyota_analysis_6.png)
+![](media/toyota_analysis_1.png)
+![](media/toyota_analysis_6.png)
 
 
 # 2. Data Preparation
@@ -30,8 +32,7 @@ There are 236 comments on eksisozluk and 60 complaints on sikayetvar.com.
 * Created comment_length, word_count and sentiment features.
 * Binned comment_length feature.
 * Lemmatized comments.
-You can find the blogpost about this analysis on: 
-https://istavrit.de/2022/12/31/You-should-check-it-before-buying-a-new-Toyota-Corolla-Hybrid.html
+
 1. Crawled keyword "toyota corolla hybrid" from
 * eksisozluk.com
 * sikayetvar.com
@@ -61,7 +62,7 @@ Coherence Score:  0.286
 Lower the perplexity better the model
 Higher the topic coherence, the topic is more interpretable
 
-![](ghtop_images/lda_eksi.png)
+![](media/lda_eksi.png)
 
 1. Cars consumption efficienty  
 2. Cars speed
@@ -82,7 +83,7 @@ Coherence Score:  0.254
 
 Lower the perplexity better the model
 Higher the topic coherence, the topic is more interpretable
-![](ghtop_images/lda_sikayet.png)
+![](media/lda_sikayet.png)
 
 1. First topic is generally about engine.
 2. Second one is about consumption.
@@ -90,7 +91,7 @@ Higher the topic coherence, the topic is more interpretable
 
 # 5. Deployment
 
-![](ghtop_images/screen_shot_app.png)
+![](media/screen_shot_app.png)
 
 You can run the application on your local machine:
 1. Install virtualenv `pip install virtualenv`, then create a virtualenv , finally activate it.
