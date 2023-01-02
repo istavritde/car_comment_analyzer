@@ -1,6 +1,16 @@
 # Car Comment Analysis and Application
 
-![](media/CRISP-DM_Process_Diagram.png)
+## Files
+
+* car_analysis_en_blog.ipynb : Contains the analysis of this project.
+* 2022-12-31-You should check it before buying a new Toyota Corolla Hybrid.ipynb : Blogpost raw file.
+* files : contains crawled comments and complaints. 
+    * all_cars_en_cleaned_v3.pickle: Top three selling cars in Turkiye in 2022.
+    * sikayet_en.pickle : Complaints about Toyota Corolla Hybrid.
+* media : Contains the images about the project.
+* requirements.txt : Necessary packages to run web application.
+* app.py : Streamlit application for dashboard.
+* utils.py : Necessary functions for the dashboard application.
 
 
 # 0. Business Understanding
@@ -101,9 +111,22 @@ You can run the application on your local machine:
 ## Car Comment Analyzer Web Application
 
 Created a streamlit application that enables users to select a car brand, date range and shows topics and related keywords.
+Top three most selling cars in Turkiye in 2022 is included in selections.
+* Fiat Egea
+* Renault Clio HB
+* Toyota Corolla
+* Toyota Corolla Hybrid
 
 ### Instructions
 
 1. run `pip install requirements.txt` to install necessary packages.
 2. run `streamlit run app.py` 
 3. go to http://localhost:8501
+
+# Summary
+
+It seems like I found answers to first two of my questions on beginning, so it seems like people liked the car and there are complaints about service and warranty. This approch can be transformed into a generic application so we can search for keywords and get a summary about products. However I could not find any chronic problem information on first glance. Maybe it can be derived with deeper analysis.
+
+## References
+
+LDA Analysis : https://towardsdatascience.com/end-to-end-topic-modeling-in-python-latent-dirichlet-allocation-lda-35ce4ed6b3e0
